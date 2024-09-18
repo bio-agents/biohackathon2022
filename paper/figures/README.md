@@ -1,0 +1,1 @@
+For the nested donut plots, there were generated with jupyter notebooks without annotation and annotations were then added on top using LibreOffice Draw (I'm sorryyyyyy it's the only thing I had on my pc at the time), if you want to edit without it being all messed up maybe try opening with this software (Lucie L)

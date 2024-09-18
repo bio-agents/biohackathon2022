@@ -1,0 +1,17 @@
+metadata:
+    id: bioagents-edam-operations-used
+    description: How many EDAM operations are used to annotate bio.agents?
+    name: Number of operations used to annotate bio.agents
+    output_type: count
+query: >
+    PREFIX edam:<http://edamontology.org/>
+    PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX owl:<http://www.w3.org/2002/07/owl#>
+    PREFIX bsc:<http://bioschemas.org/>
+    PREFIX bsct:<http://bioschemas.org/types/>
+    PREFIX sc:<http://schema.org/>
+    SELECT (COUNT(DISTINCT ?data) as ?count) WHERE
+    {
+        ?data rdfs:subClassOf <http://edamontology.org/data_0006>
+    }

@@ -1,0 +1,1 @@
+This directory stores tests jupyternotebooks for testing edam with and without inferences (see instructions within the notebooks) + querying edam only with rdf lib 

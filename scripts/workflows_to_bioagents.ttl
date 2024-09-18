@@ -1,0 +1,43 @@
+@prefix ns1: <https://schema.org/> .
+
+<https://workflowhub.eu/workflows/220?version=1> ns1:hasPart <https://bio.agents/fastqc>,
+        <https://bio.agents/picard_samtofastq> .
+
+<https://workflowhub.eu/workflows/221?version=1> ns1:hasPart <https://bio.agents/bandage>,
+        <https://bio.agents/hifiadapterfilt> .
+
+<https://workflowhub.eu/workflows/222?version=1> ns1:hasPart <https://bio.agents/fastqc>,
+        <https://bio.agents/multiqc> .
+
+<https://workflowhub.eu/workflows/225?version=1> ns1:hasPart <https://bio.agents/bandage>,
+        <https://bio.agents/quast> .
+
+<https://workflowhub.eu/workflows/227?version=1> ns1:hasPart <https://bio.agents/minimap2> .
+
+<https://workflowhub.eu/workflows/228?version=1> ns1:hasPart <https://bio.agents/minimap2> .
+
+<https://workflowhub.eu/workflows/229?version=1> ns1:hasPart <https://bio.agents/busco>,
+        <https://bio.agents/quast> .
+
+<https://workflowhub.eu/workflows/232?version=1> ns1:hasPart <https://bio.agents/fastqc>,
+        <https://bio.agents/pear> .
+
+<https://workflowhub.eu/workflows/233?version=1> ns1:hasPart <https://bio.agents/fastqc> .
+
+<https://workflowhub.eu/workflows/237?version=1> ns1:hasPart <https://bio.agents/minimap2>,
+        <https://bio.agents/purge_dups> .
+
+<https://workflowhub.eu/workflows/346?version=1> ns1:hasPart <https://bio.agents/cutadapt>,
+        <https://bio.agents/fastqc>,
+        <https://bio.agents/multiqc> .
+
+<https://workflowhub.eu/workflows/347?version=1> ns1:hasPart <https://bio.agents/bwa-mem2>,
+        <https://bio.agents/multiqc> .
+
+<https://workflowhub.eu/workflows/351?version=1> ns1:hasPart <https://bio.agents/bwa-mem2>,
+        <https://bio.agents/multiqc> .
+
+<https://workflowhub.eu/workflows/403?version=1> ns1:hasPart <https://bio.agents/busco>,
+        <https://bio.agents/merqury>,
+        <https://bio.agents/quast> .
+

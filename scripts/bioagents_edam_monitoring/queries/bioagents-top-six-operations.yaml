@@ -1,0 +1,18 @@
+metadata:
+    id: bioagents-top-six-operations
+    description: Get top 6 operation reprented in bio.agents
+    name: Top 6 operation used in bio.agents
+    output_type: listing
+query: >
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    SELECT  ?operation (COUNT(?operation) as ?count) ?label WHERE
+    {
+        ?x rdf:type <http://schema.org/SoftwareApplication>;
+        <http://schema.org/name> ?name;
+        <http://schema.org/featureList> ?operation.
+        ?operation rdfs:label ?label.
+    }
+    GROUP BY ?operation ?label
+    ORDER BY DESC(?count)
+    LIMIT 5
